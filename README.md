@@ -1,18 +1,16 @@
 # efi-inspector
 
-Binary Ninja plugin for inspecting UEFI firmware images
+Author: **Brandon Miller (zznop)**
 
-# Features
+_Binary Ninja plugin for inspecting UEFI firmware images_
 
-* Load UEFI firmware flash images containing valid flash descriptors
-   * Apply structures to flash regions, EFI FFS volumes, and EFI FFS files
-   * Enumerate the platform architecture by locating and parsing PEI Core TE
-   * Set entry point and disassemble at reset vector (Intel architectures only)
-* Generate a markdown report of the EFI firmware file system tree
-* Search EFI firmware file system for blobs by GUID
-* Extract EFI files to disk
+## Description
 
-# Screenshots
+EFI Inspector is a Binary Ninja plugin for inspecting UEFI firmware flash images. It is capable
+of loading UEFI flash dumps and identifying flash regions, Firmware File System (FFS) volumes,
+and FFS files. EFI Inspector facilitates multiple operations to include generating a markdown
+report on the FFS layout, searching the file system for EFI files by GUID, and extracting EFI files
+to disk.
 
 **Load UEFI Flash Image**
 
@@ -30,9 +28,33 @@ Binary Ninja plugin for inspecting UEFI firmware images
 
 ![demo search](img/guid-search.png)
 
+## Installation Instructions
+
+### Darwin
+
+no special instructions, package manager is recommended
+
+### Windows
+
+no special instructions, package manager is recommended
+
+### Linux
+
+no special instructions, package manager is recommended
+
+## Minimum Version
+
+This plugin requires the following minimum version of Binary Ninja:
+
+* 4333
+
 ## License
 
 This plugin is released under a MIT license.
+
+## Metadata Version
+
+2
 
 ## Related Projects
 
